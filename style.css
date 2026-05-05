@@ -1,0 +1,23 @@
+/* Basic layout for the screens */
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style for the HUD container */
+.hud {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
