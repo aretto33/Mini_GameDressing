@@ -16,12 +16,32 @@
     </div>
     <div id="screen-juego" class="screen" style="display:none">
         <div class="hud">
-            <div class="botones_menu">
-                <button>-</button>
-                   <button>-</button>
+            <!-- Menú de categorías Kawaii -->
+            <div class="menu-categorias-kawaii">
+                <button class="btn-kawaii" onclick="cambiarCategoria('personaje')">Cuerpo</button>
+                <button class="btn-kawaii" onclick="cambiarCategoria('tops')">Tops</button>
+                <button class="btn-kawaii" onclick="cambiarCategoria('bottom')">Bottoms</button>
+                <button class="btn-kawaii" onclick="cambiarCategoria('dress')">Dresses</button>
+            </div>
+
+            <!-- Opciones y Navegación debajo del personaje -->
+            <div class="controles-inferiores">
+                <div id="contenedor-opciones" class="opciones-grid"></div>
+                <div class="navegacion-principal">
+                    <button class="btn-nav" id="atras" onclick="botonAtras()">◀ Atrás</button>
+                    <span id="nombre-item">Selecciona una categoría</span>
+                    <button class="btn-nav" id="siguiente" onclick="botonSiguiente()">Siguiente ▶</button>
+                </div>
             </div>
         </div>
-
+        
+        <!-- Este es el "Lienzo" donde aparecerán las imágenes -->
+        <div class="personaje-contenedor">
+            <img id="capa-personaje" src="clothes/character/example1.png" alt="Cuerpo">
+            <img id="capa-tops" src="" alt="" class="capa-ropa">
+            <img id="capa-bottom" src="" alt="" class="capa-ropa">
+            <img id="capa-dress" src="" alt="" class="capa-ropa">
+        </div>
     </div>
 
         
